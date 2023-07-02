@@ -1,0 +1,15 @@
+The algorithm of the ResumeBuilder class:
+
+1.	Get the applicant's name, contact information, education, work experience, educational institutions, field of expertise, personal details, achievements, awards, professional profile, and about section from the user.
+2.	Generate the resume text by adding the applicant's information to the resume template.
+3.	Generate a random file name for the PDF file.
+4.	Write the resume text to the PDF file.
+5.	Download the PDF file.
+
+Here are the steps in more detail:
+
+1.	The main() method of the ResumeBuilder class first gets the applicant's name, contact information, education, work experience, educational institutions, field of expertise, personal details, achievements, awards, professional profile, and about section from the user. This is done using the Scanner class.
+2.	The generateResume() method then generates the resume text by adding the applicant's information to the resume template. The resume template is a string that contains the headings for the different sections of the resume, such as "Name", "Email", "Phone", "Education", "Experience", etc. The generateResume() method simply adds the applicant's information to the resume template, one section at a time.
+3.	The generateRandomFileName() method generates a random file name for the PDF file. This is done by using the Math.random() method to generate a random number. The file name is then formatted as "resume-<random number>.pdf".
+4.	The writeResume() method then writes the resume text to the PDF file. This is done by creating a new PDF file, opening a file output stream to the PDF file, and then writing the resume text to the file output stream.
+5.	Finally, the main() method downloads the PDF file by printing the file name to the console.

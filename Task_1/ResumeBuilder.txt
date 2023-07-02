@@ -1,0 +1,17 @@
+Resume Builder code Explanation Working.
+resume-builder/src/main/java/com/example/demo/service/impl/
+ResumeBuilder.java
+pdfgenerator package and its classes are responsible for generating the final pdf output based on user input. The
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+1.	Importing the essential classes for file management, input/output functions, and random number generation is the first step in the code.
+2.	The entry point main function is located in the main class, which is called ResumeBuilder.
+3.	The programme asks the user to enter their name, email address, phone number, educational institutions, and employment history inside the main method, which uses the Scanner class to read user input.
+4.	The generateResume method is invoked with the provided data.
+5.	To create a resume string, the generateResume method is invoked with the provided data.
+6.	The generateResume function creates a resume string by concatenating the provided data with predefined labels (such as "Name:," "Email:," etc.).
+7.	By adding a random number to the "resume-" prefix, the generateRandomFileName function creates a random file name for the PDF file.
+8.	The resume text is written to a PDF file using the writeResume function of the nested PdfGenerator class.
+9.	It establishes a FileOutputStream to write the data and creates a new File object with the specified file name.
+10.	Using a PrintWriter object, the text from the resume is written to the PDF file.
+11	When the PDF file is prepared to download, the programme prints a message along with the produced file name.
