@@ -1,0 +1,15 @@
+Shunting Yard Algorithm:
+
+Read the input expression from left to right.
+If a number is encountered, output it.
+If an operator is encountered, push it onto the operator stack.
+If a left parenthesis is encountered, push it onto the operator stack.
+If a right parenthesis is encountered, pop operators from the stack and output them until a matching left parenthesis is encountered.
+If an operator with higher precedence than the top of the stack is encountered, push it onto the operator stack.
+If an operator with lower or equal precedence to the top of the stack is encountered, pop operators from the stack and output them until an operator with lower precedence or a left parenthesis is encountered.
+Repeat the above steps until all tokens have been read.
+Pop any remaining operators from the stack and output them.
+
+Both algorithms can be used to parse and evaluate mathematical expressions. The Shunting Yard Algorithm is particularly useful for converting infix expressions to postfix notation, while Recursive Descent Parsing provides more flexibility and allows for more complex grammars.
+
+Implementing these algorithms in code requires further implementation details and considerations, but the high-level descriptions provided above should give you a good starting point for building a functional calculator

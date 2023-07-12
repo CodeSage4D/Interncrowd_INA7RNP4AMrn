@@ -1,0 +1,13 @@
+Recursive Descent Parsing:
+
+Create a set of parsing functions, each corresponding to a specific grammar rule.
+The top-level parsing function represents the start symbol of the grammar.
+Each parsing function attempts to match a specific rule of the grammar.
+If a match is successful, the parsing function recursively calls other parsing functions to match subsequent parts of the rule.
+If a match is unsuccessful, the parsing function backtracks and returns control to its caller.
+As part of the parsing process, perform semantic actions to evaluate expressions or build an abstract syntax tree.
+Repeat the parsing process until the entire input expression has been parsed.
+
+Both algorithms can be used to parse and evaluate mathematical expressions. The Shunting Yard Algorithm is particularly useful for converting infix expressions to postfix notation, while Recursive Descent Parsing provides more flexibility and allows for more complex grammars.
+
+Implementing these algorithms in code requires further implementation details and considerations, but the high-level descriptions provided above should give you a good starting point for building a functional calculator
