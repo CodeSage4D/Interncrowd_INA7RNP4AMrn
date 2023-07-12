@@ -1,0 +1,46 @@
+class MovieTicketBookingSystem:
+
+    method main():
+        create an instance of MovieTicketBookingSystem
+        invoke the run() method
+
+    method run():
+        create JFrame window
+        set window title
+        set default close operation
+        create components (labels, checkboxes, comboboxes, textfield, button)
+        initialize seatCheckBoxes array
+        create seat selection panel and add seat checkboxes to it
+        add action listener to the book button
+
+        method actionPerformed():
+            retrieve selected movie, ticket type, date, time, and mobile number
+            initialize totalAmount to 0
+            initialize selectedSeats as an empty list
+            iterate through seat checkboxes:
+                if a seat checkbox is selected:
+                    add seat number to selectedSeats list
+                    update totalAmount based on ticket price
+            if selectedSeats is empty:
+                display error message "No seats selected."
+                return
+            iterate through selectedSeats:
+                if seat is already booked for selected movie:
+                    display error message "Seat already booked."
+                    return
+                else:
+                    add ticket to bookings map
+            construct booking confirmation message
+            display confirmation message to user
+            save booking receipt as image
+            generate OTP
+            send OTP to user's mobile number
+            display booking confirmation status to user
+
+        set layout and add components to JFrame
+        pack and make JFrame visible
+
+class Ticket:
+    attributes: seatNumber, ticketType
+    constructor: initialize seatNumber and ticketType
+    methods: getSeatNumber(), getTicketType()

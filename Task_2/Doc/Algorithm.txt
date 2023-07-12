@@ -1,0 +1,32 @@
+Algorithm for Movie Ticket Booking System:
+
+1. Start the program.
+2. Create a JFrame window for the application and set its title.
+3. Set the default close operation for the JFrame.
+4. Create JLabels for movie, ticket type, date, time, and mobile number.
+5. Create JComboBoxes for movie selection, ticket type, date, and time.
+6. Create a JTextField for the mobile number input.
+7. Create a JButton for booking the tickets.
+8. Initialize the seatCheckBoxes 2D array.
+9. Create a JPanel to display the seat selection checkboxes.
+10. Create the seat selection checkboxes and add them to the panel.
+11. Add an ActionListener to the book button.
+12. Inside the ActionListener:
+    a. Retrieve the selected movie, ticket type, date, time, and mobile number.
+    b. Initialize totalAmount to 0 and selectedSeats as an empty list.
+    c. Iterate through the seat checkboxes:
+        i. If a seat checkbox is selected, add its seat number to the selectedSeats list and update totalAmount based on the ticket price.
+    d. If no seats are selected, display an error message.
+    e. Iterate through the selectedSeats:
+        i. Check if the seat is already booked for the selected movie.
+        ii. If booked, display an error message.
+        iii. If not booked, add the ticket to the bookings map.
+    f. Construct the booking confirmation message.
+    g. Display the confirmation message using JOptionPane.
+    h. Save the booking receipt as an image.
+    i. Generate an OTP using a random number generator.
+    j. Simulate sending the OTP to the user's mobile number.
+    k. Display the booking confirmation status on the screen using JOptionPane.
+13. Set the layout of the JFrame and add the components.
+14. Pack and make the JFrame visible.
+15. End the program.

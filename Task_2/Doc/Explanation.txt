@@ -1,0 +1,11 @@
+* The code first defines the `MovieTicketBookingSystem` class. This class is the main class of the program, and it contains the code for the GUI and the booking logic.
+* The class then defines the `Ticket` class. This class represents a ticket, and it contains the seat number and the ticket type.
+* The `MovieTicketBookingSystem` class has a constructor that initializes the GUI components. The constructor also adds a listener to the `bookButton` button. The listener calls the `bookTickets()` method when the button is clicked.
+* The `bookTickets()` method first gets the values of the user's input. It then checks if the seats are available. If the seats are available, the method books the tickets and displays a confirmation message.
+* The `saveReceiptAsImage()` method saves the receipt as an image file.
+* The `generateOTP()` method generates a random 4-digit OTP.
+* The `sendOTP()` method simulates sending the OTP to the user's mobile number.
+* The `displayBookingConfirmation()` method displays the booking confirmation message.
+* The `main()` method creates a new `MovieTicketBookingSystem` object and displays the GUI.
+
+The code also defines a few constants, such as the number of rows and columns in the seat layout. These constants are used to initialize the `seatCheckBoxes` array.
